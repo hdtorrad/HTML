@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Questionário</legend>
+            <fieldset>
+                <legend>Cadastro</legend>
+                
+                <label for="email">Email: </label>
+                <input type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Insira aqui seu e-mail"
+                        required/>
+                <br><br>
+                <label for="senha">Senha: </label>
+                <input type="password" 
+                        id="senha" 
+                        name="senha" 
+                        placeholder="Insira a senha aqui" 
+                        min="8" max="16"
+                        required/>
+            </fieldset>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <label for="nome">Nome: </label>
+                <input type="text" 
+                        name="nome" 
+                        id="nome"
+                        required/>
+                <br><br>
+                <label for="idade">Idade: </label>
+                <input type="number" 
+                        name="idade" 
+                        id="idade"
+                        max="150"
+                        min="5"
+                        required/>
+                <br><br>
+                <label for="telefone">Telefone: </label>
+                <input type="text" 
+                        name="telefone" 
+                        id="telefone"
+                        min= 11 max="21"
+                        required>
+                <!--MAX 21 por conta dos caracteres () e - e os possíveis espaços e o código do país-->
+                <br><br>
+                <label for="nascimento"> Data de nascimento: </label>
+                <input type="date" 
+                        name="nascimento" 
+                        id="nascimento"
+                        min="1873-01-01"
+                        max="2018-01-01"
+                        required/>
+                <br><br>
+                <label for="genero">Gênero: </label>
+                <input type="radio" name="genero" id="masculino" value="masculino">
+                <label for="genero"> Masculino</label>
+                <input type="radio" name="genero" id="feminino" value="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" id="outros" value="Outros">
+                <label for="outros"> Outros</label>
+                <input type="radio" name="genero" id="pfn" value="Prefiro não responder">
+                <label for="pfn">Prefiro não responder</label>
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências:</legend>
+                <label for="marcas">Marca de celular que você usa:</label>
+                <select name="marcas" id="marcas">
+                    <option value="Samsung">Samsung</option>
+                    <option value="LG">LG</option>
+                    <option value="Positivo">Positivo</option>
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Xaiomi">Xaiomi</option>
+                    <option value="Motorola">Motorola</option>
+                </select>
+                <br><br>
+                <label for="browser">Escolha um navegador que você usa: </label>
+                <input type="text" name="browser" id="browser" list="browser">
+                <datalist id="browser">
+                    <option value="Google">
+                    <option value="Mozila Firefox">
+                    <option value="Thor">    
+                </datalist>
+                <label for="navegador">Escolha um navegador que você usa: </label>
+                <input type="text" name="navegador" id="navegador">
+                <br><br>
+                <label for="musica">Escolha os ritimos músicais que você escuta: </label>
+                <input type="checkbox" name="" id="">
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>
