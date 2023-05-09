@@ -1,0 +1,26 @@
+header{
+    position: absolute;
+
+    background-color: whitesmoke;
+    box-shadow: 3px;
+    
+}
+
+h1{
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h3{
+    font-family: 'Alegreya SC', serif;
+}
+
+a{
+    color: gray;
+}
+
+nav{
+    display: inline-block;
+    position: relative;
+    text-align: right;
+}
